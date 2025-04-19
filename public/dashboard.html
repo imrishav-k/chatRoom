@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to your Dashboard</h1>
+      <div id="userInfo"></div>
+      <button id="logoutBtn" class="btn">Logout</button>
+
+      <div class="socket-section">
+        <h2>Chat Room</h2>
+        <div id="chatMessages"></div>
+        <input type="text" id="messageBody" placeholder="Type a message" />
+        <button id="sendMessage" class="btn">Send Message</button>
+      </div>
+    </div>
+    <script src="/js/auth.js"></script>
+    <script src="/js/socket.js"></script>
+  </body>
+</html>
